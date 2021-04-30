@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dictionary App</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="icon" href="./icon.png" type="image/gif" sizes="16x16"> -->
     <link rel="icon" href="./icon.png" type="image/gif" sizes="16x16">
+
 </head>
 
 <body>
@@ -18,22 +20,26 @@
         </div>
     </nav>
 
-    <section class="input container">
-        <h2>Find any word that exists in this world.</h2>
-        <div class="form__wrap">
-            <div class="input__wrap">
-                <input type="text" placeholder="Enter a word.." id="input">
-                <button id="search">Search</button>
-            </div>
-        </div>
-    </section>
+    <div class="background">
+        <div class="blur">
+            <section class="input container">
+                <h2>Find any word that exists in this world.</h2>
+                <div class="form__wrap">
+                    <div class="input__wrap">
+                        <input type="text" placeholder="Enter a word.." id="input">
+                        <button id="search">Search</button>
+                    </div>
+                </div>
+            </section>
 
-    <section class="data container">
-        <span class="loading">Loading...</span>
-        <p class="def"></p>
-        <div class="audio"></div>
-        <div class="not__found"></div>
-    </section>
+            <section class="data container">
+                <span class="loading">Loading...</span>
+                <p class="def"></p>
+                <div class="audio"></div>
+                <div class="not__found"></div>
+            </section>
+        </div>
+    </div>
 
     <script src="./app.js"></script>
 </body>
